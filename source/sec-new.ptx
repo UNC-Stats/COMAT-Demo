@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-new" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>New Section Title</title>
+
+    <p> Section Text. Inline LaTeX: <m>\frac{a}{b}</m>. Math, newline, centered display <me> \frac{a}{b} </me> is like this!</p>
+
+    <p> This is <q> a quote </q>. I want to <em> emphasize</em> the list I'm about
+    to make.
+<ol>
+    <li>
+        <p>List item 1!
+        </p>
+    </li>
+    <li>
+        <p>
+            An item with an unordered list.
+            <ul>
+                <li>
+                    <p>
+                        Item.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Another item.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </li>
+</ol>
+</p>
+
+<definition xml:id="def-population">
+    <statement>
+        <p>
+            A <term>population</term> is the entire set of cases that we are interested in studying.
+        </p>
+    </statement>
+</definition>
+
+<claim xml:id="claim-">
+    <statement>
+        <p>
+           This sample is not representative. 
+        </p>
+    </statement>
+</claim>
+<proof>
+    <p>
+      Left for student.  
+    </p>
+</proof>
+
+
+<note>
+    <p>
+    This is a note to the reader.
+    </p>
+</note>
+
+
+</section>

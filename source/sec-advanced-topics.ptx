@@ -1,8 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-advanced-topics" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>My Advanced Section Title</title>
+  <title> Which name belongs to the face on the left? </title>
 
-  <p> Section Text. </p>
+
+  <figure xml:id="BOB-TIM">
+    <caption>Photograph in the <c>assets</c> directory.</caption>
+   <image source="BOBvsTIM.png">
+    <description>
+      Photograph of .....
+  </description>
+    <shortdescription>Photographs of faces of two men.</shortdescription>
+   </image>
+  </figure>
+
+  <p> Have student submit answer - collect class data. </p>
+
+
+  <investigation>
+  <title>Facial Prototyping</title>
+  <p> A study in <em>Psychonomic Bulletin and Review </em> (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that <q>people use facial prototypes when 
+    they encounter different names.</q> Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers 
+    wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact 
+    results of their study.
+  </p>
+  </investigation>
+
+  <example>
+  <statement>
+    <p>Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level.
+  <em>Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left. </em></p>
+  </statement>
+  <solution><p><m>22</m>, where <m>+</m> is the concatenation operator.</p></solution>
+  </example>
+
+  
+
+  <exercise>
+  <title> HT -Manually-authored exercise </title>
+  <statement>
+    <p>Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level.
+  <em>Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left. </em></p>
+  </statement>
+  </exercise>
+   <hint><p>We're being a bit tricky here...</p> </hint>
+   <solution><p><m>22</m>, where <m>+</m> is the concatenation operator.</p></solution>
+  
+  
+   <exercise>
+    <title> CI -Manually-authored exercise </title>
+    <statement>
+      <p>Also compute and interpret a 95% confidence interval for the parameter of interest. </p>
+    </statement>
+  </exercise>
+    <hint><p>We're being a bit tricky here...</p>
+    </hint>
+    <solution><p><m>22</m>, where <m>+</m> is the concatenation operator.</p>
+    </solution>
+  
+ 
+
+
+  <exercise xml:id="tfq" label="true-false">
+    <title>Decision CI - Runestone-powered True/False Question</title>
+     <statement correct='no'>
+        <p>
+            Based on the confidence interval, we would NOT reject the null hypothesis.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            The null value is outside of the CI.
+        </p>
+        </feedback>
+    </exercise>
+
+
+  <exercise label="some-matching">
+    <title>Practical Import - Runestone-powered Matching Problem</title>
+      <statement>
+      <p>
+         Does your confidence interval suggest that the results are practically important? Explain.
+      </p>
+      </statement>
+      <choices randomize="yes">
+      <choice correct="yes">
+          <statement>
+          <p>
+              Yes, because....
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice correct="yes">
+          <statement>
+          <p>
+              Yes, because......
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice>
+          <statement>
+          <p>
+              No, because...
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice>
+          <statement>
+          <p>
+            Question does not apply.
+          </p>
+          </statement>
+          <feedback>
+          <p>
+            Does not apply if results were not statistically significant.
+          </p>
+          </feedback>
+      </choice>
+      </choices>
+  </exercise>
+
 
 </section>
