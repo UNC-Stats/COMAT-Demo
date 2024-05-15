@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p>Using your confidence interval, what would be the decision for the test?</p>
+<p>The decision is to <fillin name="AnSwEr0001" characters="5"/> the null hypothesis (<m>H_0</m>)</p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{}</m>
+        </p>
+      </answer>
+      <solution><p><m>Reject\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTskYyA9ICJSZWplY3QiOwoKQkVHSU5fUEdNTApVc2luZyB5b3VyIGNvbmZpZGVuY2UgaW50ZXJ2YWwsIHdoYXQgd291bGQgYmUgdGhlIGRlY2lzaW9uIGZvciB0aGUgdGVzdD8KCltAS2V5Ym9hcmRJbnN0cnVjdGlvbnMoJ0ZpbGwgaW4gdGhlIGJsYW5rLicpQF0qKgoKVGhlIGRlY2lzaW9uIGlzIHRvIFtfXXskY317NX0gdGhlIG51bGwgaHlwb3RoZXNpcyAoW2BIXzBgXSkKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYCBbJGNdXHRleHR7Ln1gXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-05-15T21:29:32Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$c = "Reject";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Using your confidence interval, what would be the decision for the test?
+
+[@KeyboardInstructions('Fill in the blank.')@]**
+
+The decision is to [_]{$c}{5} the null hypothesis ([`H_0`])
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[` [$c]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>
