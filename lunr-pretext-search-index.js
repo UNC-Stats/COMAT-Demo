@@ -1,13 +1,13 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter-2",
+  "id": "front-colophon",
   "level": "1",
-  "url": "frontmatter-2.html",
+  "url": "front-colophon.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "  My Website   copyright  "
+  "body": ""
 },
 {
   "id": "sec-first-steps",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Hypothesis Test",
-  "body": " Hypothesis Test   Which name belongs to the face on the left?      Photograph in the assets directory.   Photograph of .....  Photographs of faces of two men.    Have student submit answer - collect class data.  A printable version (worksheet) of this invetigation, plus questions, is available here: Facial Prototyping .  *Note that this file is stored in your assets folder, and is automatically put in external when pretext build the file.   Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  Use StatKey to answer the first two checkpoint questions below. Click here to access the actual article.     HT -Manually-authored exercise  Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.   We're being a bit tricky here...   , where is the concatenation operator.    CI -Manually-authored exercise  Also compute and interpret a 95% confidence interval for the parameter of interest.   We're being a bit tricky here...   , where is the concatenation operator.     Decision CI - Runestone-powered True\/False Question  Based on the confidence interval, we would NOT reject the null hypothesis.   The null value is outside of the CI.     Practical Import - Runestone-powered Matching Problem  Does your confidence interval suggest that the results are practically important? Explain.     Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.     The video below would be a demo of one of us using StatKey.   StatKey for the Hypothesis Test  Hello World    "
+  "body": " Hypothesis Test   Which name belongs to the face on the left?      Photograph in the assets directory.   Photograph of .....  Photographs of faces of two men.    Have student submit answer - collect class data.  A printable version (worksheet) of this invetigation, plus questions, is available here: Facial Prototyping .  *Note that this file is stored in your assets folder, and is automatically put in external when pretext build the file.   Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  Use StatKey to answer the first two checkpoint questions below. Click here to access the actual article.      HT -Manually-authored exercise   Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.    We're being a bit tricky here...   , where is the concatenation operator.     CI -Manually-authored exercise   Also compute and interpret a 95% confidence interval for the parameter of interest.    We're being a bit tricky here...   , where is the concatenation operator.      Decision CI - Runestone-powered True\/False Question   Based on the confidence interval, we would NOT reject the null hypothesis.    The null value is outside of the CI.       Practical Import - Runestone-powered Matching Problem   Does your confidence interval suggest that the results are practically important? Explain.      Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.      The video below would be a demo of one of us using StatKey.   StatKey for the Hypothesis Test  Hello World    "
 },
 {
   "id": "sec-advanced-topics-2",
@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.3",
   "title": "HT -Manually-authored exercise.",
-  "body": "HT -Manually-authored exercise  Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.  "
+  "body": " HT -Manually-authored exercise   Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.   "
 },
 {
   "id": "sec-advanced-topics-13",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.4",
   "title": "CI -Manually-authored exercise.",
-  "body": "CI -Manually-authored exercise  Also compute and interpret a 95% confidence interval for the parameter of interest.  "
+  "body": " CI -Manually-authored exercise   Also compute and interpret a 95% confidence interval for the parameter of interest.   "
 },
 {
   "id": "true-false",
@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.5",
   "title": "Decision CI - Runestone-powered True\/False Question.",
-  "body": "Decision CI - Runestone-powered True\/False Question  Based on the confidence interval, we would NOT reject the null hypothesis.   The null value is outside of the CI.  "
+  "body": " Decision CI - Runestone-powered True\/False Question   Based on the confidence interval, we would NOT reject the null hypothesis.    The null value is outside of the CI.   "
 },
 {
   "id": "some-matching",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.6",
   "title": "Practical Import - Runestone-powered Matching Problem.",
-  "body": "Practical Import - Runestone-powered Matching Problem  Does your confidence interval suggest that the results are practically important? Explain.     Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.    "
+  "body": " Practical Import - Runestone-powered Matching Problem   Does your confidence interval suggest that the results are practically important? Explain.      Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.     "
 },
 {
   "id": "sec-advanced-topics-21",
