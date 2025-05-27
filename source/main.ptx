@@ -5,15 +5,17 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>STAT 150: Intro Stats</title>
+    <subtitle>Come Up with a Title Later</subtitle>
+   
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
-    <xi:include href="./ch-nextchapter-title.ptx" />
+    <xi:include href="./ch-preliminary-chapter.ptx" />
+    <xi:include href="./ch-descriptive-stats.ptx" />
+    <xi:include href="./ch-cat-inference.ptx" />
 
 
     <!-- Include backmatter -->

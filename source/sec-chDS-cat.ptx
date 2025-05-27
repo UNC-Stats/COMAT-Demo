@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chDS-cat" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Describing Categorical Data - One and Two Variables</title>
+
+    <p>Nancy has been working on this....</p>
+
+<claim xml:id="claim-">
+    <statement>
+        <p>
+           The mean will be larger than the median. 
+        </p>
+    </statement>
+</claim>
+<proof>
+    <p>
+      Left for student.  
+    </p>
+</proof>
+
+
+
+
+</section>

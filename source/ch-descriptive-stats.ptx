@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-descriptive-stats" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Data Exploration and Description</title>
+
+  <introduction>
+    <p> Write me....Text before the first section. </p>
+  </introduction>
+
+
+  <objectives xml:id="objectives-descriptive-stats">
+    <title>Getting Started</title>
+    
+    <introduction>
+      <p>
+        Add text....This is where we can specify the big learning objectives for the chapter... You will learn:
+      </p>
+    </introduction>
+
+    <ol>
+      <li> exploratory data analysis </li>
+      <li> graphs </li>
+      <li> statistics </li>
+      <li> interpretation </li>
+    </ol>
+  
+    <conclusion>
+      <p>
+        Add text....Concluding sentences....
+      </p>
+    </conclusion>
+
+  </objectives>
+
+
+
+  <!-- include sections -->
+  <xi:include href="sec-chDS-example-EDA.ptx" />
+  <xi:include href="sec-chDS-cat.ptx" />
+  <xi:include href="sec-chDS-quant.ptx" />
+  <xi:include href="sec-chDS-mixed.ptx" />
+  <xi:include href="sec-chDS-other.ptx" />
+</chapter>
+

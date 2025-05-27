@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chC-rename-puppet-show" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Testing Stuff Out Page</title>
+  
+<p>Trying to embed some applets and other things to see how they work.</p>
+<ul>
+  <li>Embedding an R shiny applet that's hosted on a public website. Worked! Need to test how to do this if I build the shiny app myself...</li>
+  <li>StatKey embed worked! I can use the applet as is, and I can edit the data. But I can't seem to upload new data sets. 
+    It seems like the upload does work, but then I can't actually access it. I try to select columns to use and nothing happens. </li>
+  <li>ISI embed worked! You CAN both edit the data box and upload new data. Yay!</li>
+  <li> Bottom of Page ~ Embedding working(?) code cell for R .</li>
+</ul>
+
+  <figure>
+  <caption>Embedding R Shiny app that is on a website ~ Mapping Data <c>iframe</c></caption>
+  <interactive xml:id="testing-Rshiny" iframe="https://riverwatchco.shinyapps.io/DataTool/" width="150%" aspect="16:9"/>
+</figure>
+
+
+
+  <figure>
+  <caption>Embedding StatKey Applet ~ Descriptive Stats ~ Two Quant Vars <c>iframe</c></caption>
+  <interactive xml:id="testing-statkey" iframe="https://www.lock5stat.com/StatKey/descriptive_2_quant/descriptive_2_quant.html" width="150%" aspect="16:9"/>
+</figure>
+
+  <figure>
+  <caption>Embedding StatKey Applet ~ Bootstrapping ~ One Proportion <c>iframe</c></caption>
+  <interactive xml:id="testing-statkey-2" iframe="https://www.lock5stat.com/StatKey/bootstrap_1_cat/bootstrap_1_cat.html" width="150%" aspect="16:9"/>
+</figure>
+
+ <figure>
+  <caption>Embedding ISI (Rossman/Chance) Applet ~ Testing ~ One Proportion <c>iframe</c></caption>
+  <interactive xml:id="testing-ISI" iframe="https://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?hideExtras=1" width="150%" aspect="16:9"/>
+</figure>
+
+
+ <figure>
+  <caption>Embedding ISI (Rossman/Chance) Applet ~ Testing ~ Multiple Means <c>iframe</c></caption>
+  <interactive xml:id="testing-ISI-2" iframe="https://www.rossmanchance.com/applets/2021/anovashuffle/AnovaShuffle.htm?hideExtras=2" width="150%" aspect="16:9"/>
+ </figure>
+
+
+<paragraphs>
+        <title>Trying Sage Cells in General</title>
+        <p>These examples come from the guide</p>
+
+<sage>
+<input>numerical_integral(sin(x)^2, (0, 2))</input>
+<!-- need to use wildcard matching to make this doctestable -->
+</sage>
+
+
+        <sage doctest="absolute" tolerance="0.006">
+ <input>12 + 0.01*random()</input>
+ <output>12.005</output>
+ </sage>
+
+ <p> I removed the output line from the first example, so it will not be doctested(?). Not sure what that means exactly... </p>
+</paragraphs>
+
+
+<p>The above was in paragraphs tag so I could put in a header/title. The below is not.</p>
+
+<p> Now, we're going to try some R code cells. First examples come from book. Then I try out a t-test. </p>
+
+ <sage language="r">
+ <input>
+ ruth &lt;- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+ bonds &lt;- c(16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28)
+ dimaggio &lt;- c(12, 14, 20, 21, 25, 29, 30, 30, 31, 32, 32, 39, 46)
+ summary(ruth)
+ summary(bonds)
+ summary(dimaggio)
+ boxplot(ruth, bonds, dimaggio)
+ </input>
+ </sage>
+
+ <p> The above is a boxplot of the three data sets. Notice that we only get the boxplot output. We do not see the results of the
+  three summary() commands. If we want to see this output, we need to add a print() command, or use a different code cell for each. 
+</p>
+ 
+
+ <sage language="r">
+ <input>
+ # load package and data
+ library(ggplot2)
+ data(mpg, package="ggplot2")
+ mpg_select &lt;- mpg[mpg$manufacturer %in% c("audi", "ford", "honda", "hyundai"), ]
+ # Scatterplot
+ g &lt;- ggplot(mpg_select, aes(displ, cty)) +
+ labs(subtitle="mpg: Displacement vs City Mileage",
+ title="Bubble chart")
+ g + geom_jitter(aes(col=manufacturer, size=hwy)) +
+ geom_smooth(aes(col=manufacturer), method="lm", se=F)
+ </input>
+ </sage>
+
+ <p> Below we have some empty R cells that you can just type into. I left a comment in one. Notice that the empty cell with
+  no input portion does not require a closing tag for sage.
+ </p>
+
+ <sage language="r"/>
+
+ <sage language="r">
+ <input>
+ # All code cells are connected to the same R session, so you can use variables defined in one cell in another cell.
+ </input>
+ </sage>
+
+
+
+<p> Now, let's try a t-test. </p>
+  <sage language="r">
+ <input>
+ t.test(ruth, bonds, paired=F, var.equal=F)
+ </input>
+ </sage>
+
+
+
+
+
+
+ 
+
+</section>

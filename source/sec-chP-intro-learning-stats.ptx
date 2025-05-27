@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chP-intro-learning-stats" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Learning Statistics is like...</title>
+  
+
+  <introduction>
+    <p>...taking a general topics course. Data can be found everywhere, and we will look at examples 
+      from a variety of disciplines and on a variety of topics. 
+   </p>
+
+    <blockquote>
+      <p>
+      The best thing about being a statistician is that you get to play in everyone's backyard.
+      </p>
+     <attribution>
+        <line>John Tukey</line>
+        <line>Famous Statistician</line>
+     </attribution>
+   </blockquote>
+
+   <p>Data and data analysis should not exist inside a vacuum, so we
+      emphasize the importance of context and how the data connects to real life problems. Don't lose focus of how the data impacts 
+      you personally, or your family and community. 
+   </p>
+
+  </introduction>
+
+
+
+  <subsection xml:id="stats-like-math">
+    <title>...Learning Math?</title>
+    <p> 
+     Yes and No! Statistics <em>is</em> a mathematical science and the methods used by statisticians can involve mathematical computations.
+      However, the focus of this book is on developing your "statistical thinking" abilities and your "statistical literacy."
+    </p>
+      
+    <p>  
+      Statistical thinking is a type of critical thinking, involving data and <em>inductive reasoning</em>, used to draw reasonable 
+      and useful conclusions that can guide decision-making and action <xref ref= "biblio-kaplan-book" />. 
+
+     <aside>
+      <title>Inductive Reasoning</title>
+      <p>
+        is a type of reasoning that involves drawing general conclusions from specific observations.
+      </p>
+     </aside>
+  
+     The logic and reasoning used in Statistics may be uncomfortable to you at first. 
+     You'll need to learn to think in terms of hypotheticals.
+
+    </p>
+
+    <p> Statistical literacy is the ability to understand, interpret, and critically evaluate data, claims made based on data,
+      and other statistical information that is presented to you. 
+      This is an important skill to have in today's data-driven world, and is listed as a skill most jobs require.
+    </p>
+  
+    <p>
+      Let's start by defining what we mean by data.  
+    </p>
+
+
+    <definition xml:id="def-data">
+      <title>Data</title>
+      <p> Data is a collection of facts, or information, brought together for reference or analysis and comes in 
+        a multitude of formats, including numbers, words, measurements, observations, blocks of text, and images.
+      </p>
+   </definition> 
+    
+  </subsection>
+    
+  
+  <subsection xml:id="stats-like-foreign-language">
+    <title> ... Learning a Foreign Language? </title>
+    <p>
+      Yes! There will be a lot of new vocabulary words for you to learn, and we have a specific, precise ways of talking about data 
+      and conclusions made from data. This will take practice, and you will need to become fluent in both the vocab and logic in order to be succesful. 
+    </p>
+
+    <p>The following is a list of a few of the vocabulary words that you will encounter in this course.
+      These are the building blocks of the language of Statistics. 
+
+      <ul>
+        <li> Population </li>
+        <li> Sample </li>
+        <li> Parameter </li>
+        <li> Statistic </li>
+        <li> Variable </li>
+        <li> Distribution </li>
+        <li> Random </li>
+      </ul>
+    </p>
+
+    <p> 
+        You will also need to learn the symbols that are used in statistics. For example, the symbol <m>\mu</m> 
+        (pronounced: mu) is used to represent a population mean, and <m>\hat{p}</m> (pronounced: p-hat) is used to represent a
+        sample proportion. These symbols are not just 
+        random letters or characters. They have very specific meanings in the context of Statistics.
+        
+    </p>
+ 
+    <p> Suggestions for learning the vocabulary: 
+      <ul>
+        <li> Make flashcards with the word on one side and the definition on the other. </li>
+        <li> Use the words in sentences. </li>
+        <li> Create mnemonics to help you remember the words. </li>
+        <li> Use fun poems/songs to help you remember: <url href="https://www.causeweb.org/cause/resources/fun/">Fun Collection on CauseWeb</url></li>
+        <li> Create a word wall in your study space. </li>
+      </ul>
+    </p>
+
+  </subsection>
+ 
+
+</section>

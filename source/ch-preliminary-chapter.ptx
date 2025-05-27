@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-preliminary-chapter" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The Preliminaries</title>
+
+  <introduction>
+    <p> Statistics is all about making sense of our world from the information that we gather. 
+      Our hope is that this book will be the starting point of that sense-making journey for you! 
+    </p>
+      
+    <p>Statistics encompasses methods for data collection, analysis, and interpretation. 
+      Statistical methods influence our lives daily. They help to determine the medicines that are available to us, 
+      the ads that we get from the grocery store, and the websites our search engines refer us to. They are essential 
+      to weather forecasts, insurance rates, and the quality control of the products we buy. We use them to keep track 
+      of our health, the economy, and social issues such as race and gender equality, crime rates, and poverty. 
+      We see them in the form of graphics and charts, means and percentages, conclusions and predictions in academic 
+      research, media reports, and advertisements. <alert>cite and paraphrase</alert>
+    </p>
+     
+    <p>This preliminary chapter will introduce you to the concepts that you will learn throughout this book. 
+      We start by taking a look at the bigger picture so that when you learn the details in later chapters, you'll understand how 
+      they fit into the larger whole. 
+    </p>  
+  </introduction>
+
+  <objectives xml:id="objectives-prelim">
+    <title>Getting Started</title>
+    
+    <introduction>
+      <p>
+        Add text....This is where we can specify the big learning objectives for the chapter... You will learn:
+      </p>
+    </introduction>
+
+    <ol>
+      <li> The purposes of data analysis </li>
+      <li> Why we look at more than just the data </li>
+      <li> What analysis is all about: studying variability </li>
+      <li> Some basic vocabulary </li>
+    </ol>
+  
+    <conclusion>
+      <p>
+        Add text....Concluding sentences....
+      </p>
+    </conclusion>
+
+  </objectives>
+
+
+  <!-- include sections -->
+  <xi:include href="sec-chP-intro-learning-stats.ptx" />
+  <xi:include href="sec-chP-investigation-breakdown.ptx" />
+  <xi:include href="sec-chP-vocab.ptx" />
+  <xi:include href="sec-chP-variability.ptx" />
+  
+</chapter>

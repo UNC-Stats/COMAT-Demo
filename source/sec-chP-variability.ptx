@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chP-variability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statistics is the Study of Variability</title>
+
+  <p> Insert Rob's Task on Measurements and Variability! Put in worksheet format? 
+    This example has activity blocks inside the worksheet. </p>
+
+  <worksheet label="worksheet-activity-no-task">\
+    <title> Testing this Out! </title>
+  <page>
+  <activity workspace="1in">
+    <statement>
+      <p>
+        Just a simple activity here.
+      </p>
+    </statement>
+  </activity>
+  <activity workspace="1in">
+    <statement>
+      <p>
+        Here is a second activity.
+      </p>
+    </statement>
+  </activity>
+  </page>
+</worksheet>
+
+</section>

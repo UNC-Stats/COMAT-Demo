@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<glossary xml:id="glossary-backmatter" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+ <title>Glossary</title> <glossary-list/> 
+ 
+ <gi><title>Test1</title> 
+     <p> This is a test of the glossary. </p> 
+ </gi>
+
+  <gi><title>Test2</title> 
+     <p> Can this be automated with definition tags? </p> 
+  </gi>
+
+
+
+ <gi><title>Statistics</title>
+      <p> Statistics is the science of gaining insight, drawing conclusions, and making decisions from data, 
+          which also invovles the collection, organization, analysis, interpretation, and presentation of data.
+      </p>
+ </gi>
+
+  <gi><title>Data</title>
+      <p> Data is a collection of facts, or information, brought together for reference or analysis and comes in a multitude of formats, 
+          including numbers, words, measurements, observations, blocks of text, and images.
+      </p>
+  </gi> 
+
+
+</glossary>

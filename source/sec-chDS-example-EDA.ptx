@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chDS-example-EDA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example EDA</title>
+
+  <p> Need to transfer in the example.... 
+  </p>
+
+    <data>
+     <title>Data Set</title>
+      <p>Not sure what I'll do with this block, but.... feel like I should use it.
+      </p>
+    </data>
+
+
+  <exploration>
+     <title>Spotify</title>
+      <p> Second example is an EDA. Put in exploration block or another investigation block? Or neither?
+      </p>
+   </exploration>
+
+
+</section>

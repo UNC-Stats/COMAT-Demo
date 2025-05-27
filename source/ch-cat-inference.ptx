@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-cat-inference" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Inference for Categorical Data</title>
+
+  <introduction>
+    <p> Text before the section. </p>
+  </introduction>
+
+  <introduction>
+    <p> Write me....Text before the first section. </p>
+  </introduction>
+
+
+  <objectives xml:id="objectives-cat-inference">
+    <title>Getting Started</title>
+    
+    <introduction>
+      <p>
+        Add text....This is where we can specify the big learning objectives for the chapter... You will learn:
+      </p>
+    </introduction>
+
+    <ol>
+      <li> statistical inference </li>
+      <li> sampling distribution </li>
+      <li> confidence intervals </li>
+      <li> hypothesis tests </li>
+      <li> randomization and simulation </li>
+      <li> associations </li>
+    </ol>
+  
+    <conclusion>
+      <p>
+        Add text....Concluding sentences....
+      </p>
+    </conclusion>
+
+  </objectives>
+
+
+  <!-- include sections -->
+  <xi:include href="sec-chC-rename-covid-dog.ptx" />
+  <xi:include href="sec-chC-rename-puppet-show.ptx" />
+  <xi:include href="sec-chC-rename-bobTim.ptx" />
+
+    
+
+</chapter>

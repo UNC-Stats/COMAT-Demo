@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chP-investigation-breakdown" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples</title>
+
+  <introduction> 
+    <title>Introduction</title>
+    <p>What you will learn explained through two examples... Purposes of data analysis:
+      exploration, inference, and prediction. Most of the time we're trying to answer a specific research question,
+      but sometimes we just want to explore the data and see what sort of patterns and relationships emerge. 
+      This exploratin can be used to generate new research questions, too.
+    </p>  
+
+    <p>Terms in this section, and indeed much of this chapter, will all be revisited later in the text. 
+      The plan for now is simply to get a sense of the role statistics can play in practice.
+    </p>
+  </introduction>
+  
+  
+  <subsection xml:id="prelim-SleepCaff-example"> 
+    <title>First Example - Breaking Down the Process of a Statistical Investigation</title>
+
+    <p> This first example is of a statistical investigation that was performed to answer a specific research question. 
+    </p>
+
+    <question xml:id="Q-relate-sleep-caff">
+     <title>Can you relate to this scenario?</title>
+     <statement>
+       <p> You're feeling tired, but you're in the middle of something and don't want to or can't take a break. 
+         So you reach for a pick me up, such as a cup of coffee, tea, or maybe an energy drink.
+       </p>
+       
+       <p> Now discuss:
+          <ul>
+            <li>Did it help? </li>
+            <li>Were you able to complete your task? </li>
+            <li> Complete it well? </li>
+            <li>Do you think taking a nap, even a short 10-minute nap, would have been helpful? </li>
+            <li>More or less helpful than drinking caffeine? </li>
+          </ul>
+       </p>
+      </statement>
+    </question>
+
+
+    <assemblage>
+      <title> Can you relate to this scenario? </title>
+      <p> <em>Is this format better?</em> You're feeling tired, but you're in the middle of something and don't want to or can't take a break. 
+        So you reach for a pick me up, such as a cup of coffee, tea, or maybe an energy drink.
+      </p>
+      <p> Now discuss...
+      </p>
+    </assemblage>
+
+
+
+  <investigation>
+    <title>Sleep or Caffeine for Memory?</title>
+    <introduction>
+      <p>
+        In this investigation, reseachers ansered the question: 
+        How does caffeine compare to napping in terms of verbal, motor, and perceptual memory? <xref ref="biblio-mednick-sleepcaff" />
+       <url href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2603066/"> This is a link to the published research article.</url>
+      </p>
+    </introduction>
+
+    <task>
+      <title> What we already know… and what we still wonder about… </title>
+      <statement>
+        <p>The first step of any statistical investigation is to develop a research question. The researchers observed that there has been an increase
+          in the amount of caffeine that people consume and that people consume caffeine to help offset not getting enough sleep or even as a substitute for sleep.
+          They searched the research literature and found studies reporting that caffeine enhances mood, alertness, attention, and speed of information processing.  
+        </p>
+
+        <p> <em>But they still wondered: What is the affect of caffeine on memory? </em>
+        </p>
+      </statement>
+
+      <statement>
+        <p>
+          The researchers also found in the literature that naps, like caffeine, enhance alertness and attention. 
+          But they found that naps also help with some forms of memory consolidation.
+        </p>
+
+        <p> <em>So, they also wondered: How does the effect of caffeine on memory compare to the effect of sleep on memory? </em>
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <title>What did the researchers discover in their own research?</title>
+      <statement>
+        <p> They found that caffeine <em>impaired </em> memory, while a nap improved memory. 
+        </p>
+
+        <blockquote>
+          <p>
+            “In this study, we find that a moderate dose of caffeine impaired motor sequence learning and declarative verbal memory compared 
+            to placebo and daytime sleep. These decreases were found despite the fact that caffeine increased subjective alertness, suggesting 
+            that the caffeine dose was sufficiently high to have some psychoactive effect... An afternoon nap, on the other hand, improved free 
+            recall memory relative to the caffeine group after both a 20min and a 7hr retention interval and produced greater learning on a 
+            motor sequence task than caffeine...In addition to enhancing memory consolidation for previously studied words, naps improved the 
+            ability to learn a new list of words post-intervention when compared with caffeine.” 
+          </p>
+        </blockquote>
+
+      </statement>
+    </task>
+
+    <task>
+      <title>How did the researchers get here? What allowed them to make these conclusions?</title> 
+     
+      <introduction>
+        <statement>
+         <p> The short answer is that they collected data and then analyzed it! 
+            The longer answer involves a series of questions that they had to answer:
+         </p>
+        
+          <p> Data Collection Questions:</p>
+          <ul>
+             <li>What kind of data should be collected?</li>
+             <li>How do we <em>ethically</em> get this data?</li>
+             <li>Who should the data be collected from?</li>
+             <li>How do these decisions impact the quality and type of conclusions that can be made?</li>
+           </ul>
+        
+        <p>Data Analysis Questions:</p>
+         <ul>
+           <li><p>Lots of analysis methods exist! Which one(s) should be used?</p>
+              <ul>
+                <li>How can we <q>see</q> the data to idenitfy patterns, differences, similarities, oddities, etc.</li>
+                <li>What numerical summaries should be computed, e.g., mean, median, mode?</li>
+                <li>What inferene methods or statistical models will help answer the research question?</li>
+              </ul>
+          </li>
+          <li>What do the results of the analyses actually tell us?</li>
+          <li> What do the results of the analyses <em>not</em> tell us?</li>
+          <li> What follow up analyses would be helpful?</li>
+        </ul>    
+        
+        <p>Let's take a closer looks at how did the researchers compared the effects of caffeine and a daytime nap 
+          on declarative verbal memory, specifically.
+        </p>
+     </statement>
+
+     </introduction>
+     
+     <task>
+      <title>Data Collection Details:</title>
+      <statement>
+        <p>The researchers recruited <q>61 adults between ages 18-39 with no personal history of 
+          neurological, psychological or other chronic illness (non-smoking) that gave informed consent 
+          to participate in the experiment……</q> 
+        </p>
+      
+      
+      <question xml:id="Q-sample-sleep-caff">
+       <title>Consider This!</title>
+       <statement>
+         <p> Based on what you now know about the study participants, discuss:
+           how does this affect who you apply the researcher's finding to. Should they apply to you? How about your parents? friends?
+           What about people who are older than 70? People who smoke? People with chronic illnesses?
+           Is there other information you would like to know about the participants?
+         </p>
+       </statement>
+      </question>
+
+    <p> For verbal memory, they tested both the participants recall and recognition abilities, and they did this for two different time intervals - 20 minutes and 7 hours. 
+      We'll focus on just recall. Here's how the experiement, which took place over the course of one day, went:
+    </p>
+
+    <ol>
+      <li>In the morning, participants were read a list of 24 unrelated words. They heard the list 3 times. Then after 20 minutes, they were asked to recall
+        as many words from the list as possible. The researchers recorded the number of words correctly recalled. </li>
+      <li> In the afternoon, partipants were randomly assigned to either take a 90-minute nap, take a <em>200mg caffeine</em> pill, or to take a placebo pill. Both pills were
+        unmarked and looked the same. 
+          <aside>
+      <title>200mg in perspective</title>
+      <p>
+        Info on caffeine in beverages <tag>aside</tag>.
+      </p>
+    </aside>
+  </li> 
+      <li>When the nappers were done sleeping, the other particpants took their pills. Then one hour later, all participants were tested for recall again. 
+        At this point, 7 hours had elapsed.</li>
+      <li> Afterwards, the entire verbal memory recall test was repeated with a new list of 24 words. </li>
+    </ol>
+
+
+    <question xml:id="Q-experiment-sleep-caff">
+       <title>What do you know about experiments?</title>
+       <statement>
+         <p> This was an experiment. What does that mean exactly? 
+          How would you define an experiment? 
+          What are other options for studies? What is a placebo? 
+          Why do you think the researchers included a placebo group in this study?
+         </p>
+       </statement>
+      </question>
+
+      <p>The researchers noted that some participants did not understand the test, which led to unusable data. For the verbal recall test, they
+        ended up with usable data from only 35 participants: 12 nappers, 12 caffeine takers, and 11 placebo takers. </p>
+
+      <question xml:id="Q-spreadsheet-sleep-caff">
+       <title>What do you know about experiments?</title>
+       <statement>
+         <p> Spreadsheet software, such as excel, can be used to record data. What does the data set look like for this experiment? 
+          How would you record the resulting data?
+         </p>
+       </statement>
+       <answer>
+         <p>Here's one possible way to record the data (only first 5 participants shown):</p>
+         <image source="Images/sleep-caff-df-example.png"/>
+         <caption> write me</caption>
+         <shortdescription> alt text - write me</shortdescription>
+       </answer>
+      </question>
+
+     </statement>
+     </task>
+
+     <task>
+      <title>Data Analysis Details:</title>
+      <statement>
+        <p>We share some of the analysis details and results for the 7-hour recall test.....finish entering this investigation example....
+          
+        </p>
+      </statement>
+     </task>
+
+   </task>
+
+</investigation>
+
+
+
+   <p>Testing out adding figures:</p>
+
+
+   <figure xml:id="test-figure">
+     <caption> Add caption for graph. </caption>
+     <sidebyside width="40%">
+      <figure xml:id="test-f1">
+        <image source="Images/Recall7hrPlot1.png"/>
+        <caption> write me</caption>
+        <shortdescription> alt text - write me</shortdescription>
+      </figure>
+
+     <figure xml:id="test-f2">
+        <image source="Images/Recall7hrPlot2.png"/>
+        <caption> write me</caption>
+        <shortdescription> alt text - write me</shortdescription>
+      </figure>
+    </sidebyside>
+   </figure>
+
+   
+
+
+  <conclusion> 
+    <title> Concluding Remarks/ Wrap Up </title>
+    <p>Write something.... Be able to perform your own statistical investigations.... not your jam, then you'll be 
+      better able to understand and critique the ... research that you'll read in other courses or that you see in the 
+      media...  &amp; <alert>Play in everyone else's backyard!</alert>
+   </p>
+  </conclusion>
+  
+</subsection>
+</section>

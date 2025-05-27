@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chC-rename-covid-dog" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Interval</title>
+
+
+  <investigation> 
+    <title>How Accurately Can Dogs Detect COVID?</title>
+    <p>
+      Watch this youtube clip about dogs being trained to detect COVID-19.
+    </p>
+
+    <figure>
+      <caption>NBC Nightly News: Behind The Scenes With Dogs Being Trained To Detect COVID-19 </caption>
+      <video xml:id="poncho-newsclip" youtube="HaJAwi8kSLU" width="70%"/>
+   </figure>
+
+   <p>
+    The video introduces you to a yellow lab named Poncho. Poncho is one of nine dogs that are being trained to detect COVID-19. 
+    The University of Pennsylvania study described in the video was designed so that the dogs first smelled urine samples 
+    from patients that tested positive for COVID-19. This was the standard that the dogs used to judge other scents. 
+    After a short training period, the dogs were tested to determine how accurately trained dogs can detect COVID-19 
+    through urine samples.   
+   </p>
+
+   <p>
+    Let's focus specifically on Poncho: The test consisted of Poncho smelling 12 samples. One of the samples contained urine from 
+    a COVID positive patient. The other samples contained urine from patients that tested negative for COVID and other scents. 
+    The samples were attached to a wheel that could be spun to randomize the location of the COVID positive sample. 
+    Poncho was trained to perform some kind of physical action to specify that the COVID positive sample was located.
+   </p>
+
+<figure xml:id="poncho-sample-wheel">
+    <image source="Images/poncho.png" width="50%">
+      <description>
+        Poncho smelling samples on a wheel.
+      </description>
+      <shortdescription>
+        Poncho smelling samples on a wheel.
+      </shortdescription>
+    </image>
+  <caption>Poncho smelling samples on a wheel.</caption>
+</figure>
+
+   <p>
+    The video did not provide data for us to consider, but they stated that the dogs have over a 95% accuracy rate. 
+    Let's say, for the sake of this investigation, that Poncho was tested 20 time and chose the correct sample 18 times. 
+    Later on we will look at real data from another study where sweat samples were used. 
+   </p>
+  
+  </investigation>
+
+
+  <exercise label="poncho-matching">
+    <title>Matching Problem</title>
+    <statement>
+    <p>
+      Identify the items on the left and match them to the appropriate items on the right.
+    </p>
+    </statement>
+    <feedback>
+      <p>
+      Write Me...
+      </p>
+    </feedback>
+    <cardsort>
+    <match>
+    <premise order="4">Population</premise>
+    <response>All of Poncho's trials </response>
+    </match>
+    <match>
+    <premise order="3">Sample</premise>
+    <response>Poncho's 20 observed trials</response>
+    </match>
+    <match>
+    <premise order="1">Parameter</premise>
+    <response> Poncho's true accuracy rate over all trials.</response>
+    </match>
+    <match>
+    <premise order="2">Statistic</premise>
+    <response>Poncho's accuracy rate during the 20 observed trials</response>
+    </match>
+    <match>
+    <premise order="5">Variable</premise>
+    <response>Whether Poncho correctly identifies the COVID sample</response>
+    </match>
+    </cardsort>
+  </exercise>
+
+  <p>We can use the results of Poncho's 20 trials to estimate his true accuracy rate. 
+    The statistic is the best point estimate for the parameter. 
+    So, we can estimate that Poncho's true accuracy rate is 90% (for all trials, not just the 20 observed). 
+    However, we know that the sample statistic varies. If we were to repeat the experiment, Poncho could be correct 
+    a different number of times.
+  </p>
+
+  <p> So, it's a good idea to attach a <term>margin of error</term> to the point estimate. 
+    We can use the sample statistic and the margin of error to create a <term>confidence interval</term>. 
+  </p>
+
+    <definition xml:id="def-margin-of-error">
+      <statement>
+        <p>
+          Reword this.... measure of precision...A measure of how much we expect the sample statistic to vary 
+          from the true parameter witha. certain degree of confidence. 
+          A margin of error is the difference between an estimate and its upper or lower confidence bounds.
+        </p>
+      </statement>
+    </definition>
+    
+    <definition xml:id="def-confidence-interval">
+      <statement>
+        <p>
+          A confidence interval is an interval estimate that gives us a range of plausible values for the parameter. 
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-confidence-level">
+      <statement>
+        <p>
+          Reword....The degree to which we can be confident that our confidence interval has captured the true value of the parameter.
+          The confidence level is the proportion of times that the confidence interval will contain the true parameter 
+          if we were to repeat the experiment many times. 
+        </p>
+      </statement>
+    </definition>
+    
+    <p>To construct the confidence interval, you first need to obtain an estimate for the standard error of the statistic. 
+      You can do this using the bootstrap method.
+    </p>
+
+
+    
+<exercise>
+  <title>Describe Bootstrapping Process</title>
+    <statement>
+      <p>
+	      Describe how we could generate one bootstrap sample for this scenario? 
+        <alert>Solution Not Appearing!!!</alert>
+      </p>
+    </statement>
+    <solution>
+      <statement>
+        <p>
+          Write me....
+        </p>
+      </statement>
+    </solution>
+  </exercise>
+
+  
+<exercise>
+  <title>Interpret Bootstrap Distirbution</title>
+    <statement>
+      <p>
+	       A bootstrap distribution based on 1000 bootstrap samples is shown here. Describe the resulting distribution, 
+         and also provide an interpretation for your estimate of the standard error of the statistic.   
+      </p>
+      <image source="Images/poncho-bootstrap.png" width="50%">
+      <description>
+        Bootstrap distribution of Poncho's accuracy rate.
+      </description>
+      <shortdescription>
+        Bootstrap distribution of Poncho's accuracy rate.
+      </shortdescription>
+    </image>
+  <caption>Bootstrap distribution of Poncho's accuracy rate.</caption>
+    </statement>
+    <solution>
+      <statement>
+        <p>
+          Write me....
+        </p>
+      </statement>
+    </solution>
+  </exercise>
+
+<exercise xml:id="true-false-one" label="vector-space-dimension">
+  <title>Interpret Bootstrap Distirbution - TRUE/FALSE</title>
+  <statement correct="no">
+    <p>
+      The boostrap distribution is centered at 0.90. So, this is Poncho's true accuracy rate.
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      write me...
+    </p>
+  </feedback>
+  <hint>
+    <p>
+     write me
+    </p>
+  </hint>
+</exercise>
+
+<p>To be 95% confident that Poncho's true accuracy rate is captured by our confidence interval, we
+  take the standard error of the statistic and multiply it by 2. Then, we use this number as our margin of error. 
+  Therefore, the formula for a 95% confidence interval is:
+  <me> statistic \pm 2 \cdot SE</me>
+</p>
+
+<p> So, we'll take our statistic of 0.90 and add and substract a margin of error of 2(0.068)=0.136.
+    This gives us a confidence interval of (0.90 - 0.136, 0.90 + 0.136) = (0.764, 1.036).
+    However, we know that the accuracy rate cannot be greater than 1.0, so we will adjust the upper bound to 1.0.
+    Therefore, our final confidence interval is (0.764, 1.0).
+</p>
+
+<exercise label="poncho-MCQ">
+    <title>Interpreting the Confidence Interval</title>
+      <statement>
+      <p>
+         Select all correct interpretations of the 95% confidence interval of (0.764, 1.0).
+      </p>
+      </statement>
+      <choices randomize="yes">
+      <choice correct="yes">
+          <statement>
+          <p>
+              We are 95% confidence that Poncho's true accuracy rate is between 0.764 and 1.0.
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice correct="yes">
+          <statement>
+          <p>
+              We are 95% confidence that Poncho will correctly detect when someone has COVID-19 between 76.4% and 100% of the time.
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice>
+          <statement>
+          <p>
+              We are 95% confidence that Poncho will correctly detect when someone has COVID-19 between 76.4% and 100% of the time during his 20 trials.
+          </p>
+          </statement>
+          <feedback>
+          <p>
+              answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      <choice>
+          <statement>
+          <p>
+            Poncho was correct 95% of the time during his 20 trials. 
+          </p>
+          </statement>
+          <feedback>
+          <p>
+            answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+            <choice>
+          <statement>
+          <p>
+             95% of the data will fall between 0.764 and 1.0.
+          </p>
+          </statement>
+          <feedback>
+          <p>
+            answer specific feedback
+          </p>
+          </feedback>
+      </choice>
+      </choices>
+  </exercise>
+
+   
+<exploration>
+  <title>How do the sample size and confidence level affect the confidence interval?</title>
+  <p>
+    In the previous section, we created a 95% confidence interval for Poncho's accuracy rate based on 20 trials. 
+    Now, let's explore how the sample size and confidence level affect the width of the confidence interval.
+  </p>
+
+  <task>
+    <statement>
+      <p>
+        	Suppose Poncho was tested 40 times, instead of 20 times and chose the correct sample 36 times.
+      </p>
+      <ol>
+        <li>What is the value of the statistic now?</li>
+        <li>What is the standard error of the statistic now? How has it changed?</li>
+        <li> Compute the new confidence interval.</li>
+      </ol>
+	  
+      <p>Based on your answers above, tell me: As the sample size increases, what else changes and how? 
+      </p>
+    </statement>
+  </task>
+
+    <task>
+    <statement>
+      <p>
+        	Continue using the lager sample. Suppose we want to be more confident in our interval estimate.
+      </p>
+      <ol>
+        <li>How might we accomplish this? How could we increase the chance that we capture the true value of the parameter?</li>
+        <li>Compute a 99% confidence interval using <m>2.58\cdot SE</m> as your margin of error.</li>
+      </ol>
+	  
+      <p>Based on your answers above, tell me: As the confidence level increases, what else changes and how? 
+      </p>
+    </statement>
+  </task>
+ 
+</exploration>
+  
+
+<question>
+  <title>Thinking about the confidence intervals...</title>
+  <p>
+    How far are you willing to generalize your results? 
+  </p>
+  <p>What limitations or concerns should we be aware of?
+  </p>
+</question>
+
+
+<note>
+  <p>When your parameter of interest is a single proportion, the shape of the bootstrap distribution will be affected 
+  by the value of the statistic. 
+  The shape will be more skewed for values near 0 and 1 (as you saw above), unless the sample size is large. 
+  </p>
+</note>
+
+<p>
+  What can we do when the sampling distribution is NOT symmetric? 
+ [We can't change that we only have 20 trials! And we can't change the fact Poncho had a have a high  
+ accuracy rate.] We use a different method to construct confidence intervals.
+</p>
+
+<p>
+  Use the percentile method.
+</p>
+<ol>
+  <li>Construct the bootstrap distribution.</li>
+  <li>Then locate the 2.5th and 97.5th percentiles. 95% of the values in the distribution will lie between these two numbers. </li>
+  <li>Use the 2.5th and 97.5th percentiles as the end points of your confidence interval.</li>
+</ol>
+
+
+
+</section>

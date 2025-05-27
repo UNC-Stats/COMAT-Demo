@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chP-vocab" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title> Vocabulary </title>
+    
+    <definition xml:id="def-pop">
+      <title>Population</title> <idx>Population</idx>
+      <p> A population is the entire group of individuals or items that we are interested in studying. 
+        For example, if we are interested in studying the average height of all college students in the 
+        United States, then the population would be all college students in the United States. 
+      </p>
+   </definition>
+   
+
+   <definition xml:id="def-sample">
+      <title>Sample</title>
+      <p> A sample is a subset of the population that we actually study. For example, if we take a 
+       random sample of 100 college students from the population of all college students in the 
+       United States, then that sample would be used to estimate the average height of all college 
+       students in the United States. 
+      </p>
+    </definition>
+
+</section>
