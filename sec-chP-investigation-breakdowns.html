@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-legacy                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Two Examples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="STAT 150: Intro Stats">
+<meta property="book:author" content="Kris, Nancy, Rob">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.7.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 150: Intro Stats:</span> <span class="subtitle">Building Statistical Literacy While Exploring the World through Data</span></a></h1>
+<p class="byline">Kris, Nancy, Rob</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-6.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-chP-intro-learning-stats.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-preliminary-chapter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-chP-vocab.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-preliminary-chapter.html" class="internal"><span class="codenumber">1</span> <span class="title">The Preliminaries</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Learning Statistics is like...</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html#stats-like-math" class="internal"><span class="codenumber">1.1.1</span> <span class="title">...Learning Math?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html#stats-like-foreign-language" class="internal"><span class="codenumber">1.1.2</span> <span class="title">... Learning a Foreign Language?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-chP-investigation-breakdowns.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Two Examples</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-investigation-breakdowns.html#prelim-SleepCaff-example" class="internal"><span class="codenumber">1.2.1</span> <span class="title">First Example - Breaking Down the Process of a Statistical Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-investigation-breakdowns.html#subsec-example2" class="internal"><span class="codenumber">1.2.2</span> <span class="title">example2&gt;</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chP-vocab.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Vocabulary</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-chP-variability.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Statistics is the Study of Variability</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-chP-variability.html#worksheet-activity-no-task" class="internal"><span class="codenumber">1.4</span> <span class="title">Testing this Out!</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">2</span> <span class="title">Chapter Title</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-first-steps.html" class="internal"><span class="codenumber">2.1</span> <span class="title">My Section Title</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-advanced-topics.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Hypothesis Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-nextchapter-title.html" class="internal"><span class="codenumber">3</span> <span class="title">Next Chapter Title</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-new.html" class="internal"><span class="codenumber">3.1</span> <span class="title">New Section Title</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">List of Symbols and Formulas</span></a></div></li>
+<li class="toc-item toc-glossary"><div class="toc-title-box"><a href="glossary-backmatter.html" class="internal"><span class="title">Glossary</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references-backmatter.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="codenumber">B</span> <span class="title">Worksheets</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">[Initial] Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-chP-investigation-breakdowns"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Two Examples</span>
+</h2>
+<section class="introduction" id="sec-chP-investigation-breakdowns-2"><h3 class="heading">Introduction.<span></span>
+</h3>
+<div class="para" id="sec-chP-investigation-breakdowns-2-2">What you will learn explained through two examples... Purposes of data analysis: exploration, inference, and prediction. Most of the time we’re trying to answer a specific research question, but sometimes we just want to explore the data and see what sort of patterns and relationships emerge. This exploratin can be used to generate new research questions, too.</div>
+<div class="para" id="sec-chP-investigation-breakdowns-2-3">Terms in this section, and indeed much of this chapter, will all be revisited later in the text. The plan for now is simply to get a sense of the role statistics can play in practice.</div></section><section class="subsection" id="prelim-SleepCaff-example"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">First Example - Breaking Down the Process of a Statistical Investigation</span>
+</h3>
+<div class="para" id="prelim-SleepCaff-example-2">This first example is of a statistical investigation that was performed to answer a specific research question.</div>
+<details id="Q-relate-sleep-caff" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Can you relate to this scenario?</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="Q-relate-sleep-caff-2-1">You’re feeling tired, but you’re in the middle of something and don’t want to or can’t take a break. So you reach for a pick me up, such as a cup of coffee, tea, or maybe an energy drink.</div> <div class="para logical" id="Q-relate-sleep-caff-2-2">
+<div class="para">Now discuss:</div>
+<ul class="disc" id="Q-relate-sleep-caff-2-2-1">
+<li id="Q-relate-sleep-caff-2-2-1-1"><div class="para" id="p-derived-Q-relate-sleep-caff-2-2-1-1">Did it help?</div></li>
+<li id="Q-relate-sleep-caff-2-2-1-2"><div class="para" id="p-derived-Q-relate-sleep-caff-2-2-1-2">Were you able to complete your task?</div></li>
+<li id="Q-relate-sleep-caff-2-2-1-3"><div class="para" id="p-derived-Q-relate-sleep-caff-2-2-1-3">Complete it well?</div></li>
+<li id="Q-relate-sleep-caff-2-2-1-4"><div class="para" id="p-derived-Q-relate-sleep-caff-2-2-1-4">Do you think taking a nap, even a short 10-minute nap, would have been helpful?</div></li>
+<li id="Q-relate-sleep-caff-2-2-1-5"><div class="para" id="p-derived-Q-relate-sleep-caff-2-2-1-5">More or less helpful than drinking caffeine?</div></li>
+</ul>
+</div></article></details><article class="assemblage assemblage-like" id="prelim-SleepCaff-example-4"><h4 class="heading"><span class="title">Can you relate to this scenario?</span></h4>
+<div class="para" id="prelim-SleepCaff-example-4-2">
+<em class="emphasis">Is this format better?</em> You’re feeling tired, but you’re in the middle of something and don’t want to or can’t take a break. So you reach for a pick me up, such as a cup of coffee, tea, or maybe an energy drink.</div>
+<div class="para" id="prelim-SleepCaff-example-4-3">Now discuss...</div></article><article class="investigation project-like" id="prelim-SleepCaff-example-5"><h4 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Sleep or Caffeine for Memory?</span>
+</h4>
+<div class="introduction" id="prelim-SleepCaff-example-5-2"><div class="para" id="prelim-SleepCaff-example-5-2-1">In this investigation, reseachers ansered the question: How does caffeine compare to napping in terms of verbal, motor, and perceptual memory? <a href="references-backmatter.html#biblio-mednick-sleepcaff" class="xref" data-knowl="./knowl/xref/biblio-mednick-sleepcaff.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 4: Comparing the benefits of Caffeine, Naps and Placebo on Verbal, Motor and Perceptual Memory">[4]</a> <a class="external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2603066/" target="_blank">This is a link to the published research article.</a><details class="ptx-footnote" aria-live="polite" id="prelim-SleepCaff-example-5-2-1-3"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="prelim-SleepCaff-example-5-2-1-3"><code class="code-inline tex2jax_ignore">pmc.ncbi.nlm.nih.gov/articles/PMC2603066/</code></div></details>
+</div></div>
+<article class="task exercise-like" id="prelim-SleepCaff-example-5-3"><h5 class="heading">
+<span class="codenumber">(a)</span><span class="space"> </span><span class="title">What we already know… and what we still wonder about….</span>
+</h5>
+<div class="para" id="prelim-SleepCaff-example-5-3-2-1">The first step of any statistical investigation is to develop a research question. The researchers observed that there has been an increase in the amount of caffeine that people consume and that people consume caffeine to help offset not getting enough sleep or even as a substitute for sleep. They searched the research literature and found studies reporting that caffeine enhances mood, alertness, attention, and speed of information processing.</div> <div class="para" id="prelim-SleepCaff-example-5-3-2-2"><em class="emphasis">But they still wondered: What is the affect of caffeine on memory?</em></div>
+<div class="para" id="prelim-SleepCaff-example-5-3-3-1">The researchers also found in the literature that naps, like caffeine, enhance alertness and attention. But they found that naps also help with some forms of memory consolidation.</div> <div class="para" id="prelim-SleepCaff-example-5-3-3-2"><em class="emphasis">So, they also wondered: How does the effect of caffeine on memory compare to the effect of sleep on memory?</em></div></article><article class="task exercise-like" id="prelim-SleepCaff-example-5-4"><h5 class="heading">
+<span class="codenumber">(b)</span><span class="space"> </span><span class="title">What did the researchers discover in their own research?</span>
+</h5>
+<div class="para" id="prelim-SleepCaff-example-5-4-2-1">They found that caffeine <em class="emphasis">impaired</em> memory, while a nap improved memory.</div> <blockquote class="blockquote" id="prelim-SleepCaff-example-5-4-2-2"><div class="para" id="prelim-SleepCaff-example-5-4-2-2-1">“In this study, we find that a moderate dose of caffeine impaired motor sequence learning and declarative verbal memory compared to placebo and daytime sleep. These decreases were found despite the fact that caffeine increased subjective alertness, suggesting that the caffeine dose was sufficiently high to have some psychoactive effect... An afternoon nap, on the other hand, improved free recall memory relative to the caffeine group after both a 20min and a 7hr retention interval and produced greater learning on a motor sequence task than caffeine...In addition to enhancing memory consolidation for previously studied words, naps improved the ability to learn a new list of words post-intervention when compared with caffeine.”</div></blockquote></article><article class="task exercise-like" id="prelim-SleepCaff-example-5-5"><h5 class="heading">
+<span class="codenumber">(c)</span><span class="space"> </span><span class="title">How did the researchers get here? What allowed them to make these conclusions?</span>
+</h5>
+<div class="introduction" id="prelim-SleepCaff-example-5-5-2">
+<div class="para" id="prelim-SleepCaff-example-5-5-2-1-1">The short answer is that they collected data and then analyzed it! The longer answer involves a series of questions that they had to answer:</div> <div class="para" id="prelim-SleepCaff-example-5-5-2-1-2">Data Collection Questions:</div> <ul class="disc" id="prelim-SleepCaff-example-5-5-2-1-3">
+<li id="prelim-SleepCaff-example-5-5-2-1-3-1"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-3-1">What kind of data should be collected?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-3-2"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-3-2">How do we <em class="emphasis">ethically</em> get this data?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-3-3"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-3-3">Who should the data be collected from?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-3-4"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-3-4">How do these decisions impact the quality and type of conclusions that can be made?</div></li>
+</ul> <div class="para" id="prelim-SleepCaff-example-5-5-2-1-4">Data Analysis Questions:</div> <ul class="disc" id="prelim-SleepCaff-example-5-5-2-1-5">
+<li id="prelim-SleepCaff-example-5-5-2-1-5-1">
+<div class="para" id="prelim-SleepCaff-example-5-5-2-1-5-1-1">Lots of analysis methods exist! Which one(s) should be used?</div>
+<ul class="circle" id="prelim-SleepCaff-example-5-5-2-1-5-1-2">
+<li id="prelim-SleepCaff-example-5-5-2-1-5-1-2-1"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-1-2-1">How can we “see” the data to idenitfy patterns, differences, similarities, oddities, etc.</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-5-1-2-2"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-1-2-2">What numerical summaries should be computed, e.g., mean, median, mode?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-5-1-2-3"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-1-2-3">What inferene methods or statistical models will help answer the research question?</div></li>
+</ul>
+</li>
+<li id="prelim-SleepCaff-example-5-5-2-1-5-2"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-2">What do the results of the analyses actually tell us?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-5-3"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-3">What do the results of the analyses <em class="emphasis">not</em> tell us?</div></li>
+<li id="prelim-SleepCaff-example-5-5-2-1-5-4"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-2-1-5-4">What follow up analyses would be helpful?</div></li>
+</ul> <div class="para" id="prelim-SleepCaff-example-5-5-2-1-6">Let’s take a closer looks at how did the researchers compared the effects of caffeine and a daytime nap on declarative verbal memory, specifically.</div>
+</div>
+<article class="task exercise-like" id="prelim-SleepCaff-example-5-5-3"><h6 class="heading">
+<span class="codenumber">(i)</span><span class="space"> </span><span class="title">Data Collection Details:.</span>
+</h6>
+<div class="para" id="prelim-SleepCaff-example-5-5-3-2-1">The researchers recruited “61 adults between ages 18-39 with no personal history of neurological, psychological or other chronic illness (non-smoking) that gave informed consent to participate in the experiment……”</div> <details id="Q-sample-sleep-caff" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h6 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Consider This!</span>
+</h6></summary><article class="question example-like knowl__content"><div class="para" id="Q-sample-sleep-caff-2-1">Based on what you now know about the study participants, discuss: how does this affect who you apply the researcher’s finding to. Should they apply to you? How about your parents? friends? What about people who are older than 70? People who smoke? People with chronic illnesses? Is there other information you would like to know about the participants?</div></article></details> <div class="para" id="prelim-SleepCaff-example-5-5-3-2-3">For verbal memory, they tested both the participants recall and recognition abilities, and they did this for two different time intervals - 20 minutes and 7 hours. We’ll focus on just recall. Here’s how the experiement, which took place over the course of one day, went:</div> <ol class="decimal" id="prelim-SleepCaff-example-5-5-3-2-4">
+<li id="prelim-SleepCaff-example-5-5-3-2-4-1"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-3-2-4-1">In the morning, participants were read a list of 24 unrelated words. They heard the list 3 times. Then after 20 minutes, they were asked to recall as many words from the list as possible. The researchers recorded the number of words correctly recalled.</div></li>
+<li id="prelim-SleepCaff-example-5-5-3-2-4-2">In the afternoon, partipants were randomly assigned to either take a 90-minute nap, take a <em class="emphasis">200mg caffeine</em> pill, or to take a placebo pill. Both pills were unmarked and looked the same. <aside class="aside aside-like" id="prelim-SleepCaff-example-5-5-3-2-4-2-2"><h6 class="heading"><span class="title">200mg in perspective.</span></h6>
+<div class="para" id="prelim-SleepCaff-example-5-5-3-2-4-2-2-2">Info on caffeine in beverages <code class="code-inline tex2jax_ignore">&lt;aside&gt;</code>.</div></aside>
+</li>
+<li id="prelim-SleepCaff-example-5-5-3-2-4-3"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-3-2-4-3">When the nappers were done sleeping, the other particpants took their pills. Then one hour later, all participants were tested for recall again. At this point, 7 hours had elapsed.</div></li>
+<li id="prelim-SleepCaff-example-5-5-3-2-4-4"><div class="para" id="p-derived-prelim-SleepCaff-example-5-5-3-2-4-4">Afterwards, the entire verbal memory recall test was repeated with a new list of 24 words.</div></li>
+</ol> <details id="Q-experiment-sleep-caff" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h6 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">What do you know about experiments?</span>
+</h6></summary><article class="question example-like knowl__content"><div class="para" id="Q-experiment-sleep-caff-2-1">This was an experiment. What does that mean exactly? How would you define an experiment? What are other options for studies? What is a placebo? Why do you think the researchers included a placebo group in this study?</div></article></details> <div class="para" id="prelim-SleepCaff-example-5-5-3-2-6">The researchers noted that some participants did not understand the test, which led to unusable data. For the verbal recall test, they ended up with usable data from only 35 participants: 12 nappers, 12 caffeine takers, and 11 placebo takers.</div> <details id="Q-spreadsheet-sleep-caff" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h6 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">What do you know about experiments?</span>
+</h6></summary><article class="question example-like knowl__content"><div class="para" id="Q-spreadsheet-sleep-caff-2-1">Spreadsheet software, such as excel, can be used to record data. What does the data set look like for this experiment? How would you record the resulting data?</div>
+<div class="solutions"><details id="Q-spreadsheet-sleep-caff-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="Q-spreadsheet-sleep-caff-3-1">Here’s one possible way to record the data (only first 5 participants shown):</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Images/sleep-caff-df-example.png" class="contained"></div>alt text - write me</div></details></div></article></details></article><article class="task exercise-like" id="prelim-SleepCaff-example-5-5-4"><h6 class="heading">
+<span class="codenumber">(ii)</span><span class="space"> </span><span class="title">Data Analysis Details:.</span>
+</h6>
+<div class="para" id="prelim-SleepCaff-example-5-5-4-2-1">We share some of the analysis details and results for the 7-hour recall test.....finish entering this investigation example....</div></article></article></article><div class="para" id="prelim-SleepCaff-example-6">Testing out adding figures:</div>
+<figure class="figure figure-like" id="test-figure"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="test-f1"><img src="external/Images/Recall7hrPlot1.png" class="contained">alt text - write me<figcaption><span class="codenumber">(a)</span><span class="space"> </span>write me</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="test-f2"><img src="external/Images/Recall7hrPlot2.png" class="contained">alt text - write me<figcaption><span class="codenumber">(b)</span><span class="space"> </span>write me</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span>Add caption for graph.</figcaption></figure><article class="data computation-like" id="prelim-SleepCaff-example-8"><h4 class="heading">
+<span class="type">Data</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Data Set.</span>
+</h4>
+<div class="para" id="prelim-SleepCaff-example-8-2">Not sure what I’ll do with this, but.... feel like I should use it.</div></article></section><section class="subsection" id="subsec-example2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">example2&gt;</span>
+</h3>
+<article class="exploration project-like" id="subsec-example2-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">A title.</span>
+</h4>
+<div class="para" id="subsec-example2-2-2">Second example is an EDA. Put in exploration block?</div></article></section><section class="conclusion" id="sec-chP-investigation-breakdowns-5"><h3 class="heading">Concluding Remarks/ Wrap Up.<span></span>
+</h3>
+<div class="para" id="sec-chP-investigation-breakdowns-5-2">Write something.... Be able to perform your own statistical investigations.... not your jam, then you’ll be better able to understand and critique the ... research that you’ll read in other courses or that you see in the media...  &amp; <em class="alert">Play in everyone else’s backyard!</em>
+</div></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-chP-intro-learning-stats.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-chP-vocab.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

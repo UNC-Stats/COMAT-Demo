@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-legacy                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Confidence Interval</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="STAT 150: Intro Stats">
+<meta property="book:author" content="Kris, Nancy, Rob">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.7.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 150: Intro Stats:</span> <span class="subtitle">Come Up with a Title Later</span></a></h1>
+<p class="byline">Kris, Nancy, Rob</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-6.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-cat-inference.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-cat-inference.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-chC-rename-puppet-show.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-preliminary-chapter.html" class="internal"><span class="codenumber">1</span> <span class="title">The Preliminaries</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Learning Statistics is like...</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html#stats-like-math" class="internal"><span class="codenumber">1.1.1</span> <span class="title">...Learning Math?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-intro-learning-stats.html#stats-like-foreign-language" class="internal"><span class="codenumber">1.1.2</span> <span class="title">... Learning a Foreign Language?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-chP-investigation-breakdown.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Examples</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-chP-investigation-breakdown.html#prelim-SleepCaff-example" class="internal"><span class="codenumber">1.2.1</span> <span class="title">First Example - Breaking Down the Process of a Statistical Investigation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chP-vocab.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Vocabulary</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-chP-variability.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Statistics is the Study of Variability</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-chP-variability.html#worksheet-activity-no-task" class="internal"><span class="codenumber">1.4</span> <span class="title">Testing this Out!</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-descriptive-stats.html" class="internal"><span class="codenumber">2</span> <span class="title">Data Exploration and Description</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chDS-example-EDA.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Example EDA</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chDS-cat.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Describing Categorical Data - One and Two Variables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chDS-quant.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Describing Quantitative Data - One and Two Variables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chDS-mixed.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Describing Data - One Quantitative and One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chDS-other.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Describing Data - Three variables or Other Types of Data</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-cat-inference.html" class="internal"><span class="codenumber">3</span> <span class="title">Inference for Categorical Data</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-chC-rename-covid-dog.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Confidence Interval</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chC-rename-puppet-show.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Testing Stuff Out Page</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chC-rename-bobTim.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Hypothesis Testing</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">List of Symbols and Formulas</span></a></div></li>
+<li class="toc-item toc-glossary"><div class="toc-title-box"><a href="glossary-backmatter.html" class="internal"><span class="title">Glossary</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references-backmatter.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="codenumber">B</span> <span class="title">Worksheets</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">[Initial] Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-chC-rename-covid-dog"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Confidence Interval</span>
+</h2>
+<article class="investigation project-like" id="sec-chC-rename-covid-dog-2"><h3 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">How Accurately Can Dogs Detect COVID?</span>
+</h3>
+<div class="para" id="sec-chC-rename-covid-dog-2-2">Watch this youtube clip about dogs being trained to detect COVID-19.</div>
+<figure class="figure figure-like" id="sec-chC-rename-covid-dog-2-3"><div class="video-box" style="width: 70%;padding-top: 39.375%; margin-left: 15%; margin-right: 15%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/HaJAwi8kSLU?&amp;modestbranding=1&amp;rel=0" id="poncho-newsclip"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.1<span class="period">.</span></span><span class="space"> </span>NBC Nightly News: Behind The Scenes With Dogs Being Trained To Detect COVID-19</figcaption></figure><div class="para" id="sec-chC-rename-covid-dog-2-4">The video introduces you to a yellow lab named Poncho. Poncho is one of nine dogs that are being trained to detect COVID-19. The University of Pennsylvania study described in the video was designed so that the dogs first smelled urine samples from patients that tested positive for COVID-19. This was the standard that the dogs used to judge other scents. After a short training period, the dogs were tested to determine how accurately trained dogs can detect COVID-19 through urine samples.</div>
+<div class="para" id="sec-chC-rename-covid-dog-2-5">Let’s focus specifically on Poncho: The test consisted of Poncho smelling 12 samples. One of the samples contained urine from a COVID positive patient. The other samples contained urine from patients that tested negative for COVID and other scents. The samples were attached to a wheel that could be spun to randomize the location of the COVID positive sample. Poncho was trained to perform some kind of physical action to specify that the COVID positive sample was located.</div>
+<figure class="figure figure-like" id="poncho-sample-wheel"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Images/poncho.png" class="contained" alt="Poncho smelling samples on a wheel.Poncho smelling samples on a wheel."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.2<span class="period">.</span></span><span class="space"> </span>Poncho smelling samples on a wheel.</figcaption></figure><div class="para" id="sec-chC-rename-covid-dog-2-7">The video did not provide data for us to consider, but they stated that the dogs have over a 95% accuracy rate. Let’s say, for the sake of this investigation, that Poncho was tested 20 time and chose the correct sample 18 times. Later on we will look at real data from another study where sweat samples were used.</div></article><details id="poncho-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Matching Problem.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-poncho-matching">
+<span data-subcomponent="question"><div class="para" id="poncho-matching-2-1">Identify the items on the left and match them to the appropriate items on the right.</div></span><span data-subcomponent="feedback"><div class="para" id="poncho-matching-3-1">Write Me...</div></span><li data-subcomponent="draggable" id="rs-poncho-matching_drag1" data-category="1">Population</li>
+<li data-subcomponent="dropzone" for="rs-poncho-matching_drag1" data-category="1">All of Poncho’s trials</li>
+<li data-subcomponent="draggable" id="rs-poncho-matching_drag2" data-category="2">Sample</li>
+<li data-subcomponent="dropzone" for="rs-poncho-matching_drag2" data-category="2">Poncho’s 20 observed trials</li>
+<li data-subcomponent="draggable" id="rs-poncho-matching_drag3" data-category="3">Parameter</li>
+<li data-subcomponent="dropzone" for="rs-poncho-matching_drag3" data-category="3">Poncho’s true accuracy rate over all trials.</li>
+<li data-subcomponent="draggable" id="rs-poncho-matching_drag4" data-category="4">Statistic</li>
+<li data-subcomponent="dropzone" for="rs-poncho-matching_drag4" data-category="4">Poncho’s accuracy rate during the 20 observed trials</li>
+<li data-subcomponent="draggable" id="rs-poncho-matching_drag5" data-category="5">Variable</li>
+<li data-subcomponent="dropzone" for="rs-poncho-matching_drag5" data-category="5">Whether Poncho correctly identifies the COVID sample</li>
+</ul></div></div></article></details><div class="para" id="sec-chC-rename-covid-dog-4">We can use the results of Poncho’s 20 trials to estimate his true accuracy rate. The statistic is the best point estimate for the parameter. So, we can estimate that Poncho’s true accuracy rate is 90% (for all trials, not just the 20 observed). However, we know that the sample statistic varies. If we were to repeat the experiment, Poncho could be correct a different number of times.</div>
+<div class="para" id="sec-chC-rename-covid-dog-5">So, it’s a good idea to attach a <dfn class="terminology">margin of error</dfn> to the point estimate. We can use the sample statistic and the margin of error to create a <dfn class="terminology">confidence interval</dfn>.</div>
+<article class="definition definition-like" id="def-margin-of-error"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h3>
+<div class="para" id="def-margin-of-error-1-1">Reword this.... measure of precision...A measure of how much we expect the sample statistic to vary from the true parameter witha. certain degree of confidence. A margin of error is the difference between an estimate and its upper or lower confidence bounds.</div></article><article class="definition definition-like" id="def-confidence-interval"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h3>
+<div class="para" id="def-confidence-interval-1-1">A confidence interval is an interval estimate that gives us a range of plausible values for the parameter.</div></article><article class="definition definition-like" id="def-confidence-level"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+</h3>
+<div class="para" id="def-confidence-level-1-1">Reword....The degree to which we can be confident that our confidence interval has captured the true value of the parameter. The confidence level is the proportion of times that the confidence interval will contain the true parameter if we were to repeat the experiment many times.</div></article><div class="para" id="sec-chC-rename-covid-dog-9">To construct the confidence interval, you first need to obtain an estimate for the standard error of the statistic. You can do this using the bootstrap method.</div>
+<details id="sec-chC-rename-covid-dog-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Describe Bootstrapping Process.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-chC-rename-covid-dog-10-2-1">Describe how we could generate one bootstrap sample for this scenario? <em class="alert">Solution Not Appearing!!!</em>
+</div></article></details><details id="sec-chC-rename-covid-dog-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Interpret Bootstrap Distirbution.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-chC-rename-covid-dog-11-2-1">A bootstrap distribution based on 1000 bootstrap samples is shown here. Describe the resulting distribution, and also provide an interpretation for your estimate of the standard error of the statistic.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Images/poncho-bootstrap.png" class="contained" alt="Bootstrap distribution of Poncho’s accuracy rate.Bootstrap distribution of Poncho’s accuracy rate."></div> </article></details><details id="vector-space-dimension" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Interpret Bootstrap Distirbution - TRUE/FALSE.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-vector-space-dimension">
+<div class="para" id="vector-space-dimension-2-1">The boostrap distribution is centered at 0.90. So, this is Poncho’s true accuracy rate.</div>
+<li data-component="answer" id="rs-vector-space-dimension_opt_t"><p>True.</p></li>
+<li data-component="feedback" id="rs-vector-space-dimension_opt_t"><div class="para" id="vector-space-dimension-3-1">write me...</div></li>
+<li data-component="answer" id="rs-vector-space-dimension_opt_f" data-correct=""><p>False.</p></li>
+<li data-component="feedback" id="rs-vector-space-dimension_opt_f"><div class="para" id="vector-space-dimension-3-1">write me...</div></li>
+</ul></div></div>
+<div class="solutions"><details id="vector-space-dimension-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="vector-space-dimension-4-1">write me</div></div></details></div></article></details><div class="para logical" id="sec-chC-rename-covid-dog-13">
+<div class="para">To be 95% confident that Poncho’s true accuracy rate is captured by our confidence interval, we take the standard error of the statistic and multiply it by 2. Then, we use this number as our margin of error. Therefore, the formula for a 95% confidence interval is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+statistic \pm 2 \cdot SE
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-chC-rename-covid-dog-14">So, we’ll take our statistic of 0.90 and add and substract a margin of error of 2(0.068)=0.136. This gives us a confidence interval of (0.90 - 0.136, 0.90 + 0.136) = (0.764, 1.036). However, we know that the accuracy rate cannot be greater than 1.0, so we will adjust the upper bound to 1.0. Therefore, our final confidence interval is (0.764, 1.0).</div>
+<details id="poncho-MCQ" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting the Confidence Interval.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-poncho-MCQ" data-multipleanswers="true" data-random="">
+<div class="para" id="poncho-MCQ-2-1">Select all correct interpretations of the 95% confidence interval of (0.764, 1.0).</div>
+<li data-component="answer" id="rs-poncho-MCQ_opt_a" data-correct=""><div class="para" id="poncho-MCQ-3-1-1-1">We are 95% confidence that Poncho’s true accuracy rate is between 0.764 and 1.0.</div></li>
+<li data-component="feedback" id="rs-poncho-MCQ_opt_a"><div class="para" id="poncho-MCQ-3-1-2-1">answer specific feedback</div></li>
+<li data-component="answer" id="rs-poncho-MCQ_opt_b" data-correct=""><div class="para" id="poncho-MCQ-3-2-1-1">We are 95% confidence that Poncho will correctly detect when someone has COVID-19 between 76.4% and 100% of the time.</div></li>
+<li data-component="feedback" id="rs-poncho-MCQ_opt_b"><div class="para" id="poncho-MCQ-3-2-2-1">answer specific feedback</div></li>
+<li data-component="answer" id="rs-poncho-MCQ_opt_c"><div class="para" id="poncho-MCQ-3-3-1-1">We are 95% confidence that Poncho will correctly detect when someone has COVID-19 between 76.4% and 100% of the time during his 20 trials.</div></li>
+<li data-component="feedback" id="rs-poncho-MCQ_opt_c"><div class="para" id="poncho-MCQ-3-3-2-1">answer specific feedback</div></li>
+<li data-component="answer" id="rs-poncho-MCQ_opt_d"><div class="para" id="poncho-MCQ-3-4-1-1">Poncho was correct 95% of the time during his 20 trials.</div></li>
+<li data-component="feedback" id="rs-poncho-MCQ_opt_d"><div class="para" id="poncho-MCQ-3-4-2-1">answer specific feedback</div></li>
+<li data-component="answer" id="rs-poncho-MCQ_opt_e"><div class="para" id="poncho-MCQ-3-5-1-1">95% of the data will fall between 0.764 and 1.0.</div></li>
+<li data-component="feedback" id="rs-poncho-MCQ_opt_e"><div class="para" id="poncho-MCQ-3-5-2-1">answer specific feedback</div></li>
+</ul></div></div></article></details><article class="exploration project-like" id="sec-chC-rename-covid-dog-16"><h3 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">How do the sample size and confidence level affect the confidence interval?</span>
+</h3>
+<article class="task exercise-like" id="sec-chC-rename-covid-dog-16-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-chC-rename-covid-dog-16-3-1-1">Suppose Poncho was tested 40 times, instead of 20 times and chose the correct sample 36 times.</div> <ol class="decimal" id="sec-chC-rename-covid-dog-16-3-1-2">
+<li id="sec-chC-rename-covid-dog-16-3-1-2-1"><div class="para" id="p-derived-sec-chC-rename-covid-dog-16-3-1-2-1">What is the value of the statistic now?</div></li>
+<li id="sec-chC-rename-covid-dog-16-3-1-2-2"><div class="para" id="p-derived-sec-chC-rename-covid-dog-16-3-1-2-2">What is the standard error of the statistic now? How has it changed?</div></li>
+<li id="sec-chC-rename-covid-dog-16-3-1-2-3"><div class="para" id="p-derived-sec-chC-rename-covid-dog-16-3-1-2-3">Compute the new confidence interval.</div></li>
+</ol> <div class="para" id="sec-chC-rename-covid-dog-16-3-1-3">Based on your answers above, tell me: As the sample size increases, what else changes and how?</div></article><article class="task exercise-like" id="sec-chC-rename-covid-dog-16-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-chC-rename-covid-dog-16-4-1-1">Continue using the lager sample. Suppose we want to be more confident in our interval estimate.</div> <ol class="decimal" id="sec-chC-rename-covid-dog-16-4-1-2">
+<li id="sec-chC-rename-covid-dog-16-4-1-2-1"><div class="para" id="p-derived-sec-chC-rename-covid-dog-16-4-1-2-1">How might we accomplish this? How could we increase the chance that we capture the true value of the parameter?</div></li>
+<li id="sec-chC-rename-covid-dog-16-4-1-2-2"><div class="para" id="p-derived-sec-chC-rename-covid-dog-16-4-1-2-2">Compute a 99% confidence interval using <span class="process-math">\(2.58\cdot SE\)</span> as your margin of error.</div></li>
+</ol> <div class="para" id="sec-chC-rename-covid-dog-16-4-1-3">Based on your answers above, tell me: As the confidence level increases, what else changes and how?</div></article></article><details id="sec-chC-rename-covid-dog-17" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Thinking about the confidence intervals....</span>
+</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-chC-rename-covid-dog-17-2">How far are you willing to generalize your results?</div>
+<div class="para" id="sec-chC-rename-covid-dog-17-3">What limitations or concerns should we be aware of?</div></article></details><article class="note remark-like" id="sec-chC-rename-covid-dog-18"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-chC-rename-covid-dog-18-1">When your parameter of interest is a single proportion, the shape of the bootstrap distribution will be affected by the value of the statistic. The shape will be more skewed for values near 0 and 1 (as you saw above), unless the sample size is large.</div></article><div class="para" id="sec-chC-rename-covid-dog-19">What can we do when the sampling distribution is NOT symmetric? [We can’t change that we only have 20 trials! And we can’t change the fact Poncho had a have a high accuracy rate.] We use a different method to construct confidence intervals.</div>
+<div class="para" id="sec-chC-rename-covid-dog-20">Use the percentile method.</div>
+<ol class="decimal" id="sec-chC-rename-covid-dog-21">
+<li id="sec-chC-rename-covid-dog-21-1"><div class="para" id="p-derived-sec-chC-rename-covid-dog-21-1">Construct the bootstrap distribution.</div></li>
+<li id="sec-chC-rename-covid-dog-21-2"><div class="para" id="p-derived-sec-chC-rename-covid-dog-21-2">Then locate the 2.5th and 97.5th percentiles. 95% of the values in the distribution will lie between these two numbers.</div></li>
+<li id="sec-chC-rename-covid-dog-21-3"><div class="para" id="p-derived-sec-chC-rename-covid-dog-21-3">Use the 2.5th and 97.5th percentiles as the end points of your confidence interval.</div></li>
+</ol></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-cat-inference.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-chC-rename-puppet-show.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
